@@ -1,0 +1,39 @@
+*{
+    margin: 10px;
+}
+
+.content1{
+    background-color: rgb(199, 199, 199);
+    border: 1px solid rgb(203, 192, 160);
+}
+
+.content2{
+    background-color: rgb(204, 204, 204);
+    border: 1px solid rgb(203, 192, 160);
+}
+
+.content3{
+    background-color: rgb(255, 255, 154);
+    border: 1px solid rgb(203, 192, 160);
+}
+
+@media only screen and (max-width: 580px){
+    .text1, .text2{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 581px){
+    .text1, .text3{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .text2, .text3{
+        display: none;
+    } 
+    .text1{
+        display: block;
+    }
+}
